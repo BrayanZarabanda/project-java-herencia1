@@ -1,10 +1,10 @@
 package models;
 
 public class Neumatico extends ComponenteVehicular {
-    double presion;
     int tamaño;
+    double presion;
 
-    public Neumatico(String codigo, String fabricante, int tammaño, double presion) {
+    public Neumatico(String codigo, String fabricante, int tamaño, double presion) {
         super(codigo, fabricante);
         this.tamaño = tamaño;
         this.presion = presion;
@@ -17,11 +17,11 @@ public class Neumatico extends ComponenteVehicular {
         System.out.println("Presión: " + presion + " PSI");
     }
 
-    public void verificarPresion (){
+    public void verificarPresion() {
         if (presion >= 30 && presion <= 35) {
-            System.out.println("Presión óptima");
+            System.out.println("Presión óptima.");
         } else {
-            System.out.println("Presión fuera del rango recomendado");
+            System.out.println("Presión fuera del rango recomendado.");
         }
     }
 }
